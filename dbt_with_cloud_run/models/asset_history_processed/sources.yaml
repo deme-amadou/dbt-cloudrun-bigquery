@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: asset_history_source
+    schema: staging
+    tables:
+      - name: asset_history
+        description: "This table contains data from the asset_history table in the px_processed schema."

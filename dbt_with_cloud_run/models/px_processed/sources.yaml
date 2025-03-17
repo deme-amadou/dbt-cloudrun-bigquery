@@ -1,0 +1,24 @@
+version: 2
+
+sources:
+  - name: px_source
+    schema: staging
+    tables:
+      - name: px_data
+        description: "This table contains data from the px_data table in the px_processed schema."
+        columns:
+          - name: BriefID
+            description: "This is the brief_id column."
+            tests:
+              - unique
+              - not_null
+          - name: BriefNo
+            description: "This is the brief_no column."
+            tests:
+              - unique
+              - not_null
+          - name: BriefType
+            description: "This is the brief_type column."
+            tests:
+              - accepted_values:
+                  values: ["Adaptation","Origination","Versioning"]
