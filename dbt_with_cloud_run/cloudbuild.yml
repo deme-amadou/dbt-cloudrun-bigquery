@@ -16,7 +16,7 @@ steps:
       - "deploy"
       - "dbt-cloud-run"
       - "--image=gcr.io/$PROJECT_ID/dbt-cloud-run"
-      - "--region=europe-west1"
+      - "--region=europe-west9"
       - "--memory=2Gi"
       - "--max-retries=4"
       - "--task-timeout=3600"
