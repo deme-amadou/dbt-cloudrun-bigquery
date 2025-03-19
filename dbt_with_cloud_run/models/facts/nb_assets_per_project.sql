@@ -4,7 +4,7 @@
     schema='kpis_dataset',
     )
 }}
--- Which clients have the highest total number of assets across all projects and what is the 95th percentile of their brand codes?j
+-- Which clients have the highest total number of assets across all projects and what is the 95th percentile of their brand codes?jg
 SELECT
   project_id,
   project_name,
