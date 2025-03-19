@@ -2,4 +2,4 @@ DBT with cloud run project !
 
 
 
-![alt text](image.png)
+![alt text](Architecture.png)
