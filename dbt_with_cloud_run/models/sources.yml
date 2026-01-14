@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: dwh
+    schema: raw_data
+    database: amadou
+    tables:
+      - name: asset_history
+      - name: brief_history
+      - name: px_data
