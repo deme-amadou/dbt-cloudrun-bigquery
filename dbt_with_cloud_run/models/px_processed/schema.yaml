@@ -1,0 +1,18 @@
+version: 2
+
+models:
+
+- name: transformed_px
+  description: "This model contains data from the px_data table in the px_processed schema."
+  columns:
+    - name: brief_id
+      description: "This is the brief_id column."
+      tests:
+        - unique
+        - not_null
+    - name: brief_status
+      description: "This is the brief_type column."
+      tests:
+        - accepted_values:
+            values: ["Approved","Brief Revisions","Cancelled","Deleted","Draft","ReSubmitted","Submitted"]
+       

@@ -1,7 +1,7 @@
 dbt_with_cloud_run:
   outputs:
     dev:
-      dataset: raw_data
+      dataset: processed_data
       job_execution_timeout_seconds: 300
       job_retries: 1
       location: EU
