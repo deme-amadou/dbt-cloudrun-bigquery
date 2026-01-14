@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: brief_history_source
+    schema: staging
+    tables:
+      - name: brief_history
+        description: "This table contains data from the brief_history table in the px_processed schema."
