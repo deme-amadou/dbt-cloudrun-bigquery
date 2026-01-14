@@ -1,0 +1,11 @@
+version: 2
+
+models: 
+  - name: stg_rawdata_asset_history
+    description: Schéma pour le asset_history
+
+    columns:
+      - name: Brand
+        tests:
+          - not_null
+          - unique
